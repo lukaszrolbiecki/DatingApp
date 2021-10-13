@@ -1,5 +1,8 @@
+using System.Diagnostics;
+using System.Threading;
 using API.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace API.Data
 {
@@ -10,5 +13,6 @@ namespace API.Data
         }
 
         public DbSet<AppUser> Users { get; set; }
+
     }
 }
